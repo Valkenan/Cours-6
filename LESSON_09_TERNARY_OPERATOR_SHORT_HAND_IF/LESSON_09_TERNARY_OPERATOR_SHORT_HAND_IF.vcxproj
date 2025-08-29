@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7efb292b-b3c5-4c0e-94c5-7bc066cb5b23}</ProjectGuid>
-    <RootNamespace>LESSON02BREAKPOINTMEMORYVALUES</RootNamespace>
+    <ProjectGuid>{81d1eefc-ae6b-4255-8452-986d519d7841}</ProjectGuid>
+    <RootNamespace>LESSON09TERNARYOPERATORSHORTHANDIF</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -123,10 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LESSON_02_BREAKPOINT_MEMORY_VALUES.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MyLib.h" />
+    <ClCompile Include="LESSON_09_TERNARY_OPERATOR_SHORT_HAND_IF.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

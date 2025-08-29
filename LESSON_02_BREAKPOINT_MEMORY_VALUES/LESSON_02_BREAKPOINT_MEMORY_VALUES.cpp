@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include "MyLib.h";
 
 int MySum(int a, int b)
 {
@@ -20,7 +21,7 @@ int main()
     ++b;
 
     c = a + b;
-
+    MyLib::test();
     cout << a << endl;
     cout << b << endl;
     cout << c << endl;
@@ -31,8 +32,10 @@ int main()
         a = a + a * i;
     }
 
+
     c = MySum(a, b);
     cout << c;
-
+    
     return 0;
+
 }
