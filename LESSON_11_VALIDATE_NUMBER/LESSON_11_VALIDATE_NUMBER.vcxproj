@@ -125,6 +125,9 @@
   <ItemGroup>
     <ClCompile Include="LESSON_11_VALIDATE_NUMBER.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyLib.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
