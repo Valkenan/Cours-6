@@ -1,20 +1,25 @@
-// LESSON_18_VS_FUNCTION_TIPS.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
-
+using namespace std;
+void Function2();
+void Function4()
+{
+    cout << "Hi I'm function 4" << endl;
+}
+void Function3()
+{
+    Function4();
+}
+void Function2()
+{
+    Function3();
+}
+void Function1()
+{
+    Function2();
+    Function4();
+}
 int main()
 {
-    std::cout << "Hello World!\n";
+    Function1();
+    return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
