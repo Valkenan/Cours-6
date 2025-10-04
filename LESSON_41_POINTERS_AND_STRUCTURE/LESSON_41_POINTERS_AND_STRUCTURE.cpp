@@ -1,16 +1,25 @@
 #include <iostream>
 using namespace std;
-struct stEmplyee
-{
-    string Name;
-    float Salary;
+
+struct stEmployee {
+    string FirstName;
+    string LastName;
+    int Salary;
 };
-int main()
-{
-    stEmplyee Emplyee, * ptr;
-    Emplyee.Name = "adam el fennych";
-    Emplyee.Salary = 1000;
-    ptr = &Emplyee;
-    cout << ptr->Name << endl;
+
+int main() {
+    stEmployee Employee1, * ptr;
+    Employee1.FirstName = "Mohammed Abu-Hadhoude";
+    Employee1.Salary = 5000;
+
+    cout << Employee1.FirstName << endl;
+    cout << Employee1.Salary << endl;
+
+    ptr = &Employee1;
+
+    cout << "\nUsing Pointer:\n";
+    cout << ptr->FirstName << endl;
     cout << ptr->Salary << endl;
+
+    return 0;
 }
